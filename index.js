@@ -7,6 +7,7 @@ const app = express(); // app
 const port = 5000;
 const bodyParser = require("body-parser");
 app.use(cors());
+let allowedOrigins = ["*"];
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const mongoose = require("mongoose");
